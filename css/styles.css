@@ -3,16 +3,16 @@
     --primary-text-color: #757575;
     --footer-text-address-color: rgba(255, 255, 255, 0.6);
     --part-logo-color: #000000;
-    --primary-background-color: #F5F5F5;
+    --first-background-color: #F5F5F5;
     --secondary-background-color: #2F303A;
-    --third--background-color: #F5F4FA;
+    --third-background-color: #F5F4FA;
+    --quarter-background-color: #188CE8;
     --first-color:  #FFFFFF;
     --second-color:  #2196F3;
 }
 .body{
-    background-color: var(--primary-background-color);
     color: var(--main-text-color);
-    font-family: 'Roboto', 'Releway', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 a {
     text-decoration: none;
@@ -60,8 +60,6 @@ li {
     color: var(--second-color);
 }
 .nav-list{
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: calc(16 / 14);
@@ -76,11 +74,15 @@ li {
 .footer-mail, .footer-tel{
     color: var(--footer-text-address-color);
 }
+.footer-map{
+    color: var(--first-color);
+}
 .nav-link:hover,.nav-link:focus,
 .header-mail:hover,.header-mail:focus, 
 .header-tel:hover,.header-tel:focus, 
 .footer-mail:hover,.footer-mail:focus,
-.footer-tel:hover,.footer-tel:focus {
+.footer-tel:hover,.footer-tel:focus,
+.footer-map:hover,.footr-map:focus {
     color: var(--second-color);
 }
 .header-contacts{
@@ -96,9 +98,7 @@ li {
     line-height: calc(24 / 14);
     letter-spacing: 0.03em;
 }
-.footer-map{
-    color: var(--first-color);
-}
+
 /* стилізація Студія секції solutions (Ефективні рішення для вашого бізнесу)*/
 .solutions-title {
     color: var(--first-color);
@@ -114,13 +114,12 @@ li {
     background-color: var(--secondary-background-color);
 }    
 .studio-button{
-    color: var(--main-text-color);
-    background-color: var(-third--background-color);
+    color: var(--first-color);
+    background-color: var(--second-color);
     border-color: transparent;
 
     cursor: pointer;
 
-    font-family: 'Roboto';
     font-weight: 700;
     font-size: 16px;
     line-height: calc(30 / 16);
@@ -145,7 +144,6 @@ text-transform: uppercase;
 .advantage-text{
     color: var(--primary-text-color);
 
-    font-family: 'Roboto';
     font-size: 14px;
     line-height: calc(24 / 14);
     letter-spacing: 0.03em;
@@ -158,7 +156,14 @@ text-transform: uppercase;
     text-align: center;
     letter-spacing: 0.03em;
 }
+/* стилізація Студія секції section Чим займаємося*/
+.section.work{
+    background-color: var(--first-background-color);
+}
 /* стилізація Студія секції section (Наша команда)*/
+.section.team{
+    background-color: var(--third-background-color);
+}
 .section-subtitle{
     font-weight: 500;
     font-size: 16px;
@@ -175,12 +180,11 @@ text-transform: uppercase;
 /* стилізація Портфоліо основного вмісту*/
 .portfolio-button{
     color: var(--main-text-color);
-    background-color: var(-third--background-color);
-    border-color: transparent;
-
+    background-color: var(--third-background-color);
+    border: none;
     cursor: pointer;
-
-    font-family: 'Roboto';
+    
+    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: calc(26 / 16);
@@ -189,8 +193,7 @@ text-transform: uppercase;
 }
 .portfolio-button:hover, .portfolio-button:focus{
     color: var(--first-color);
-    background-color: var(--second-color);
-    border-color: var(--second-color);
+    background-color: var(--quarter-background-color);
 }
 .portfolio-subtitle{
     color: var(--main-text-color);
@@ -203,18 +206,7 @@ text-transform: uppercase;
 .portfolio-text{
     color: var(--primary-text-color);
 
-    font-family: 'Roboto';
     font-size: 16px;
     line-height: calc(30 / 16);
     letter-spacing: 0.03em;
 }
-/* color: #2196F3; голубий частина логотипу,пошта, Студія*/
-/* color: #000000; чорний, частина логотипу хедера */
-/* color: #757575; сірий  телефон хедера,абзаци, прфесії*/
-/* color: #FFFFFF; білий загол h1,кнопки: Замовити послугу, Усі, частина логотипу футера, адреса*/
-/* color: #212121;  чорнуватий частина навігації,бльшість кнопок в портфоліо, заголовки h2,h3, імена людей*/
-/* color: rgba(255, 255, 255, 0.6); сіруватий телефон футера, пошта футера */
-/* background: #FFFFFF; білий хедер */
-/* background: #F5F5F5; білуватий секції*/
-/* background: #F5F4FA; сіруватий секції */
-/* background: #2F303A; чорнуватий футер */
